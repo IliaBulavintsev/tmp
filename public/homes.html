@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DZ</title>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/css/materialize.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <body>
+        <nav class="blue lighten-2">
+            <div class="nav-wrapper">
+             <ul class="left hide-on-med-and-down">
+               <li class="active"><a href="homes.html">Дома</a></li>
+               <li><a href="index.html">Устройства</a></li>
+               <li><a href="add_home.html">Добавление дома</a></li>
+               <li><a href="add.html">Добавление устройств</a></li>
+               <li><a href="stat.html">Статистика</a></li>
+             </ul>
+            </div>
+        </nav>
+        <div class="container">
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="edit" class="modal">
+          <div class="modal-content">
+            <h4>Редактирование параметра</h4>
+            <p>
+                <form class="form__edit col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input disabled id="param" name="param" type="text">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="val" name="val" type="text" class="validate">
+                      <label for="val">Значение</label>
+                    </div>
+                  </div>
+                  <input id="device" name="device" type="hidden">
+                  <input id="id" name="id" type="hidden">
+                  <button class="btn waves-effect waves-light submit_rang_edit" type="submit" name="action">Редактировать
+                    <i class="material-icons right">send</i>
+                  </button>
+                </form>
+            </p>
+          </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="add" class="modal">
+          <div class="modal-content">
+            <h4>Добавление девайса</h4>
+            <p>
+                <form class="form__add col s12">
+                    <div class="row">
+                          <div class="input-field col s7">
+                              <select name="d" required class="select_add_d">
+                                <option value="" disabled selected>Девайс</option>
+                              </select>
+                          </div>
+                      </div>
+                  <input id="home" name="home" type="hidden">
+                  <input id="table" name="table" type="hidden">
+                  <button class="btn waves-effect waves-light submit_rang_edit" type="submit" name="action">Добавить
+                    <i class="material-icons right">send</i>
+                  </button>
+                </form>
+            </p>
+          </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="ccc" class="modal">
+          <div class="modal-content">
+            <h4>Послать команду</h4>
+            <p>
+                <form class="form__с col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="c" name="c" type="text" class="validate">
+                      <label for="c">Команда</label>
+                    </div>
+                  </div>
+                  <input id="cd" name="cd" type="hidden">
+                  <input id="ch" name="ch" type="hidden">
+                  <button class="btn waves-effect waves-light submit_rang_edit" type="submit" name="action">Послать
+                    <i class="material-icons right">send</i>
+                  </button>
+                </form>
+            </p>
+          </div>
+        </div>
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="/js/materialize.min.js"></script>
+        <script src="/js/home.js"></script>
+    </body>
+</html>

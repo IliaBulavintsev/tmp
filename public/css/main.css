@@ -1,0 +1,23 @@
+.about_worker{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.container{
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.hidden{
+    display: none;
+}
+.showen{
+    display: block;
+}
+.subcont{
+    margin-left: 100px;
+}
+.subsubcont{
+    margin-left: 50px;
+}

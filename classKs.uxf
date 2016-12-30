@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="12.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>600</x>
+      <y>630</y>
+      <w>170</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CommandController
+Package::Controller
+--
+--
+#getCommand()
+#createCommand()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>700</x>
+      <y>380</y>
+      <w>330</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>CommandSend
+Package::DomainModel
+--
+--
+#createCommand(home, device, command)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>530</x>
+      <y>110</y>
+      <w>340</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Command
+Package::Шлюз таблиц
+--
+--
+#getCommand()
+#createCommand(home, device, command)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>500</x>
+      <y>380</y>
+      <w>170</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>CommandGet
+Package::DomainModel
+--
+--
+#getCommand()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>710</x>
+      <y>270</y>
+      <w>190</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;170;110</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>570</x>
+      <y>270</y>
+      <w>130</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>110;30;30;110</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>560</x>
+      <y>490</y>
+      <w>120</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;100;140</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>630</x>
+      <y>490</y>
+      <w>200</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>180;30;30;140</additional_attributes>
+  </element>
+</diagram>
